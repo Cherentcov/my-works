@@ -1,0 +1,374 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2'),
+    url('../fonts/Roboto-Regular.woff');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2'),
+    url('../fonts/Roboto-Bold.woff2');
+  font-display: swap;
+  font-weight: 700;
+}
+
+body {
+  color: var(--color-white);
+}
+
+:root {
+  --background-color: #3F2AFF;
+  --color-white: #fff;
+  --color-descr: #666;
+  --Steel-Gray: #212133;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+.list-reset {
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fz-hack {
+  font-size: 0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+}
+
+.descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.link {
+  border: 1px solid var(--background-color);
+  border-radius: 20px;
+  padding: 22px 75px;
+  background-color: var(--background-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-white);
+}
+
+.header {
+  padding: 27px 0;
+  background-color: var(--background-color);
+}
+
+.header__menu-burger {
+  display: none;
+}
+
+.nav__closed {
+  display: none;
+}
+
+.nav__list {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-white);
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 56px;
+}
+
+.hero {
+  padding-top: 15px;
+  padding-bottom: 6px;
+  background-color: rgba(33, 33, 51, 1);
+}
+
+.hero__content {
+  padding-top: 114px;
+}
+
+.hero__title {
+  margin-bottom: 1.7rem;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  color: var(--color-white);
+}
+
+.hero__descr {
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--color-white);
+  margin-bottom: 5.4rem;
+}
+
+.about {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: var(--color-white);
+}
+
+.about__content {
+  margin-bottom: 1.4375rem;
+  padding-left: 17.3%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 14.6%;
+}
+
+.about-img {
+  background-image: url(/img/aboutImg.png);
+}
+
+.about__title {
+  max-width: 40%;
+  margin-bottom: 1.0625rem;
+  color: #2E2B44;
+}
+
+.about__descr {
+  max-width: 65%;
+  color: var(--color-descr);
+}
+
+.advantages {
+  min-height: 80px;
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  background-position: 0.9375rem center;
+}
+
+.advantages-img1 {
+  background-image: url(/img/about1.png);
+}
+
+.advantages-img2 {
+  background-image: url(/img/about2.png);
+}
+
+.advantages-img3 {
+  background-image: url(/img/about3.png);
+}
+
+.advantages__descr {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--color-descr);
+  padding-left: 6.875rem;
+  padding-top: 11px;
+}
+
+.teachers {
+  padding-bottom: 4.5625rem;
+  padding-top: 4.6875rem;
+  background-color: rgba(33, 33, 51, 1);
+}
+
+.teachers__title {
+  margin-bottom: 1.4375rem;
+  color: var(--color-white);
+}
+
+.teachers__img {
+  margin-bottom: 1.6875rem;
+}
+
+.teachers__name {
+  margin-bottom: 0.4375rem;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--color-white);
+}
+
+.teachers__descr {
+  color: #85859B;
+}
+
+.courses {
+  padding-top: 75px;
+  padding-bottom: 49px;
+  background-color: var(--color-white);
+}
+
+.courses__title {
+  margin-bottom: 1.5rem;
+  color: var(--Steel-Gray);
+}
+
+.courses__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  flex-grow: 1;
+  margin-bottom: 30px;
+}
+
+.courses__top {
+  width: 100%;
+  min-height: 180px;
+  padding-top: 13px;
+  padding-right: 5px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: end;
+}
+
+.courses__img1 {
+  background-image: url(/img/courses1.png);
+}
+
+.courses__img2 {
+  background-image: url(/img/courses2.png)
+}
+
+.courses__img3 {
+  background-image: url(/img/courses3.png)
+}
+
+.courses__img4 {
+  background-image: url(/img/courses4.png)
+}
+
+.courses__text {
+  padding-left: 29px;
+  background-image: url(/img/mdi_access_time.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-white);
+}
+
+.courses__bottom {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 300px;
+  padding: 1.9375rem;
+  border: 1px solid rgba(237, 240, 249, 1);
+  border-radius: 0px 0px 20px 20px;
+  background-color: rgba(237, 240, 249, 1);
+}
+
+.courses__caption {
+  margin-bottom: 0.4375rem;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--Steel-Gray);
+}
+
+.courses__descr {
+  margin-bottom: 20px;
+  color: var(--color-descr);
+}
+
+.courses__link {
+  max-width: 202px;
+  margin-top: auto;
+  padding: 20px 57px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer__top {
+  background-color: #2E2B44;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 26px 0;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #2E2B44;
+}
+
+.footer__text span {
+  color: #3F2AFF;
+}
